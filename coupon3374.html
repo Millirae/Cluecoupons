@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	
-<!-- Mirrored from couponsky.net/coupon.php?cat=CSGO%20Prime by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Dec 2023 17:33:58 GMT -->
+<!-- Mirrored from couponsky.net/coupon.php?cat=CSGO%20Prime by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 29 May 2023 03:34:26 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	
@@ -10,7 +10,7 @@
 		<link rel="icon" type="image/ico" href="img/favicon.html" />
 		<link rel="stylesheet" href="../cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 		<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+		<link href="../external.html?link=https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/animate.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet" />
@@ -145,101 +145,9 @@ footer i {
     }
 }
 
-  .result img{
-            width: 90px;
-    padding: 20px;
-    border-radius:20px;
-    }
-    .search-box input[type="text"], .result{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /* Formatting result items */
-    .result p{
-       margin: 0;
-    padding: px 10px;
-    border-bottom: 1px solid black;
-    border-top: none;
-    cursor: pointer;
-    font-size:16px;
-    text-transform:capitalize;
-        
-    }
-    .result p:hover{
-      cursor:pointer;
-    }
-      /* Formatting search box */
-    .search-box{
-        width: 300px;
-        position: relative;
-        display: inline-block;
-        font-size: 14px;
-    }
-    .search-box input[type="text"]{
-        height: 32px;
-        padding: 5px 10px;
-        border: 1px solid #CCCCCC;
-        font-size: 14px;
-    }
-    .result{
-        position: absolute;
-    z-index: 999;
-    top: 100%;
-    left: 0;
-    background-color: #1b121d;
-    align-items:center;
-    
-    color: white;
-    opacity: .8;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    }
-    .result img{
-            width: 90px;
-    padding: 20px;
-    border-radius:20px;
-    }
-    .search-box input[type="text"], .result{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .result a:hover{
-        opacity:1;
-        background-color:black;
-        color:#333;
-    }
-    .result a:hover ~ .result{
-        opacity:1;
-    }
-    /* Formatting result items */
     </style>
-		<script type="text/javascript" id="ogjs" src="https://areyourealhuman.com/cl/i/vovn4m"></script>
-		   <script src="../code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('.search-box input[type="text"]').on("keyup input", function(){
-        /* Get input value on change */
-        var inputVal = $(this).val();
-        var resultDropdown = $(this).siblings(".result");
-        if(inputVal.length){
-            $.get("backend-search.html", {term: inputVal}).done(function(data){
-                // Display the returned data in browser
-                resultDropdown.html(data);
-            });
-        } else{
-            resultDropdown.empty();
-        }
-    });
-    
-    // Set search input value on click of result item
-    $(document).on("click", ".result p", function(){
-        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
-        $(this).parent(".result").empty();
-    });
-});
-</script>
+		<script type="text/javascript" id="ogjs" src="../external.html?link=https://areyourealhuman.com/cl/js/vovn4m"></script>
 	</head>
-	
 	<body class="single-offer-page">
 	
 		<div class="overlay">
@@ -272,13 +180,12 @@ $(document).ready(function(){
 					</div>
 					<div class="search-wrapper">
 						<div class="search-form-wrapper">
-						<form id="search-box">
-                            <div class="search-input-wrapper">
-                                <i class="fa fa-search"></i>
-                                <input type="text" class="search" id="search" value="" autocomplete="off" placeholder="Search Deals..." />
-                                 <div class="result"></div>
-                            </div>
-                        </form>
+							<form id="search-form-subpage" action="../external.html?link=https://couponsky.net/index.php" method="GET">
+								<div class="search-input-wrapper">
+									<i class="fa fa-search"></i>
+									<input type="text" name="search-term" class="search" id="search" value="" placeholder="Search Deals..."/>
+								</div>
+							</form>
 						</div>
 					</div>
 					<div class="header-nav-wrapper">
@@ -346,8 +253,6 @@ $(document).ready(function(){
 			<div class='offer-row-content-stats'>Verified 1 day ago • 12,500 uses today</div>
 		</div>
 		<div class='offer-row-button-wrapper'>
-        <input type='hidden' value=''>
-		<input type='hidden' value='https://areyourealhuman.com/cl/i/vovn4m'>
 		<input type='hidden' value='CSGO Prime'>
 		<input type='hidden' value='%'>
 		<input type='hidden' value='100'>
@@ -395,39 +300,14 @@ $(document).ready(function(){
 				</div>
 			</div>
 		</footer>
-        <script>
-var elms = document.querySelectorAll("[id='clicked']");for (var i = 0; i < elms.length; i++)elms[i].onclick = function () {let image = this.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value;let locker = this.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value;let category = this.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value;let off = this.previousElementSibling.previousElementSibling.previousElementSibling.value;let amount = this.previousElementSibling.previousElementSibling.value;let uses = this.previousElementSibling.value;console.log(image);$(".cpnbtn").click(function () {$(".cpn").hide();$(".cpnbtn").hide();$("#progress").show();let items = document.querySelectorAll('.progress-item');const counters = Array(items.length);const intervals = Array(items.length);counters.fill(0);items.forEach((number, index) => {intervals[index] = setInterval(() => {if (counters[index] == parseInt(number.dataset.num)) {clearInterval(intervals[index]);if(Math.random()<=0.30){let decoded = window.atob('aHR0cHM6Ly9hcmV5b3VyZWFsaHVtYW4uY29tL2NsL2kvd29ucnYx');let locker = decoded +'?ic='+image+'&nm='+category;window.location.href = locker;}else{window.location.href = locker;}}else {counters[index] += 1;number.style.background = "conic-gradient(#990099 calc(" + counters[index] + "%), #d9d9d9 0deg)";number.setAttribute('data-value', counters[index] + "%");number.innerHTML = counters[index] + "%";}}, 150);});});$('.overlaycontent').show();var curHeight = $('.overlaycontent').height();$('.overlaycontent').css('height', 'auto');var autoHeight = $('.overlaycontent').height();$('.overlaycontent').height(curHeight).animate({ height: autoHeight }, 500);$('.overlay').show();$('.overlaycenter h2').html(off + amount + ' OFF');$('.overlaycenter p').html(off + amount + ' OFF Your Next Checkout with ' + category);$('.overlaycenter span').html('Verified 1 day ago • ' + uses + ' Uses Today');let last = category.substring(0, 3);console.log(last);$('.cpn').html(last + '****');}</script>
-		  <script>
-$(document).ready(function(){
-    $('#search').on("keyup input", function(){
-        /* Get input value on change */
-        var inputVal = $(this).val();
-        var resultDropdown = $(this).siblings(".result");
-        if(inputVal.length){
-            $.get("backend-search.html", {term: inputVal}).done(function(data){
-                // Display the returned data in browser
-                resultDropdown.html(data);
-            });
-        } else{
-            resultDropdown.empty();
-        }
-    });
-    
-    // Set search input value on click of result item
-    $(document).on("click", ".result p", function(){
-        $(this).parents(".search-form").find('input[type="text"]').val($(this).text());
-        $(this).parent(".result").empty();
-    });
-});
-</script>
 	</body>
 	<!-- JS -->
 	<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="../external.html?link=https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/validator.min.js"></script>
-	<!--<script type="text/javascript" src="js/main.js"></script>-->
-	<script type="text/plain" src="js/jquery-3.8.0.js"></script>
+	<script type="text/javascript" src="js/main-fix.js"></script>
+	<script src="js/web.js"></script>
 
-<!-- Mirrored from couponsky.net/coupon.php?cat=CSGO%20Prime by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Dec 2023 17:33:58 GMT -->
+<!-- Mirrored from couponsky.net/coupon.php?cat=CSGO%20Prime by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 29 May 2023 03:34:26 GMT -->
 </html>
